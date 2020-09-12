@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int d,g;
+d=DETECT;
+initgraph(&d,&g,"");
+setbkcolor(7);
+line(150,125,100,200);
+line(150,125,350,125);
+line(350,125,400,200);
+line(150,125,200,200);
+rectangle(200,200,100,300);
+setfillstyle(8,BLUE);
+floodfill(120,250,WHITE);
+rectangle(100,300,400,200);
+setfillstyle(8,GREEN);
+floodfill(250,250,WHITE);
+rectangle(125,225,175,300);
+setfillstyle(6,CYAN);
+floodfill(150,250,WHITE);
+circle(300,250,25);
+setfillstyle(4,MAGENTA);
+floodfill(300,250,WHITE);
+line(275,250,325,250);
+line(300,225,300,275);
+setfillstyle(3,RED);
+floodfill(200,150,WHITE);
+setfillstyle(2,YELLOW);
+floodfill(150,150,WHITE);
+settextstyle(1,0,4);
+outtextxy(420,440,"Aghanaashaa");
+outtextxy(420,400,"18BET1027");
+getch();
+closegraph();
+}
